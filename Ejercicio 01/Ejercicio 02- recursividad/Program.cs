@@ -1,24 +1,20 @@
-﻿// #2
-public static class Recursividad
+﻿// #2 Escribe una función recursiva que imprima la suma de los números del 1 al n. 
+
+class Programa_2
 {
-    public static int ImprSuma(int n)
+    static void Main()
     {
-        if (n > 0)
-        {
-            int suma = ImprSuma(n - 1) + n;
-            Console.WriteLine(n);
-            return suma;
-        }
-        else
-        {
-            return 0;
-        }
+        Console.WriteLine("Ingrese un número:");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("La suma desde 1 hasta " + num1 + " es: " + SumaRecursiva(num1));
     }
-    public static void Main(string[] args)
+    static int SumaRecursiva(int n)
     {
-        int suma = ImprSuma(10);
-        Console.WriteLine("La suma es: " + suma);
+        if (n == 1)
+        {
+            return 1;
+        }
+        return n + SumaRecursiva(n - 1);
     }
 }
-
 
