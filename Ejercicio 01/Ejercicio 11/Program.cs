@@ -4,14 +4,11 @@ class Programa_11
     static void Main()
     {
         int[,] matriz = new int[2, 2] { { 11, 10 }, { 23, 14 } };
-
         int numero = 5;
-
         MultiplicarMatrizPorNumero(matriz, numero);
 
         ImprimirMatriz(matriz);
     }
-
     static void MultiplicarMatrizPorNumero(int[,] matriz, int numero)
     {
         for (int i = 0; i < matriz.GetLength(0); i++)
