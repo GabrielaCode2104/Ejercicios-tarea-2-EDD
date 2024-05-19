@@ -1,5 +1,4 @@
 ﻿// #2 Escribe una función recursiva que imprima la suma de los números del 1 al n. 
-
 class Programa_2
 {
     static void Main()
