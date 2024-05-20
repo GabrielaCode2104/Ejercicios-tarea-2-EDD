@@ -1,5 +1,4 @@
 ﻿// Ejercicio 2: Calcula la media, la mediana y la desviación estándar de los elementos de una matriz.
-
 class EstadisticasMatriz
 {
     static void Main()
